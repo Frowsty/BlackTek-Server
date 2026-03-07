@@ -1330,6 +1330,7 @@ bool ConditionDamage::doDamage(CreaturePtr creature, int32_t healthChange) const
 			g_game.map.getSpectators(spectators, creature->getPosition(), true, true);
 			for (const auto& spectator : spectators) {
 				const auto spectatorPlayer = spectator->getPlayer();
+				// BlackTek Instance System
 				if (spectatorPlayer && spectatorPlayer->compareInstance(creature->getInstanceID())) {
 					spectatorPlayer->sendMagicEffect(creature->getPosition(), CONST_ME_POFF);
 				}

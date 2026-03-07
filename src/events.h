@@ -27,6 +27,9 @@ class Events
 	struct EventsInfo {
 		// Creature
 		int32_t creatureOnChangeOutfit = -1;
+		int32_t creatureOnChangeZone = -1;
+		int32_t creatureOnEnterZone = -1;
+		int32_t creatureOnExitZone = -1;
 		int32_t creatureOnAreaCombat = -1;
 		int32_t creatureOnTargetCombat = -1;
 		int32_t creatureOnHear = -1;
@@ -90,6 +93,9 @@ class Events
 
 		// Creature
 		bool eventCreatureOnChangeOutfit(const CreaturePtr& creature, const Outfit_t& outfit);
+		void eventCreatureOnChangeZone(const CreaturePtr& creature, ZoneType_t fromZone, ZoneType_t toZone, int32_t fromZoneId, int32_t toZoneId);
+		void eventCreatureOnEnterZone(const CreaturePtr& creature, ZoneType_t newZone, int32_t newZoneId);
+		void eventCreatureOnExitZone(const CreaturePtr& creature, ZoneType_t oldZone, int32_t oldZoneId);
 		ReturnValue eventCreatureOnAreaCombat(const CreaturePtr& creature, const TilePtr& tile, bool aggressive);
 		ReturnValue eventCreatureOnTargetCombat(const CreaturePtr& creature, const CreaturePtr& target);
 		void eventCreatureOnHear(const CreaturePtr& creature, const CreaturePtr& speaker, const std::string& words, SpeakClasses type);

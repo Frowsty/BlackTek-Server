@@ -4,11 +4,12 @@ local function onSay(player, words, param)
 	end
 
 	if player:getAccountType() < ACCOUNT_TYPE_GOD then
+        print("Not GOD (" .. player:getAccountType() .. ")")
 		return false
 	end
 
 	local position = player:getPosition()
-	local monster = Game.createMonster(param, position)
+	local monster = Game.createMonster(param, position) 
 	if monster then
 		monster:getPosition():sendMagicEffect(CONST_ME_TELEPORT)
 		position:sendMagicEffect(CONST_ME_MAGIC_RED)

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Training Monk" nameDescription="a monk" race="blood" experience="200" speed="240" manacost="600">
+	<health now="999999" max="999999" />
+	<look type="57" corpse="20371" />
+	<targetchange interval="4000" chance="0" />
+	<flags>
+		<flag summonable="0" />
+		<flag attackable="1" />
+		<flag hostile="1" />
+		<flag illusionable="0" />
+		<flag convinceable="0" />
+		<flag pushable="0" />
+		<flag canpushitems="0" />
+		<flag canpushcreatures="0" />
+		<flag targetdistance="1" />
+		<flag staticattack="0" />
+		<flag runonhealth="0" />
+		<flag canwalkonenergy="0" />
+		<flag canwalkonfire="0" />
+		<flag canwalkonpoison="0" />
+	</flags>
+	<attacks>
+		<attack name="melee" interval="1000" min="0" max="0" />
+	</attacks>
+	<defenses armor="30" defense="30">
+		<defense name="healing" interval="250" chance="100" min="999999" max="999999">
+			<attribute key="areaEffect" value="blueshimmer" />
+		</defense>
+	</defenses>
+</monster>

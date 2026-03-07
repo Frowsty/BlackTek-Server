@@ -48,6 +48,12 @@ bool Events::load()
 		if (className == "Creature") {
 			if (methodName == "onChangeOutfit") {
 				info.creatureOnChangeOutfit = event;
+			} else if (methodName == "onChangeZone") {
+				info.creatureOnChangeZone = event;
+			} else if (methodName == "onEnterZone") {
+				info.creatureOnEnterZone = event;
+			} else if (methodName == "onExitZone") {
+				info.creatureOnExitZone = event;
 			} else if (methodName == "onAreaCombat") {
 				info.creatureOnAreaCombat = event;
 			} else if (methodName == "onTargetCombat") {
@@ -215,6 +221,89 @@ bool Events::eventCreatureOnChangeOutfit(const CreaturePtr& creature, const Outf
 	LuaScriptInterface::pushOutfit(L, outfit);
 
 	return scriptInterface.callFunction(2);
+}
+
+void Events::eventCreatureOnChangeZone(const CreaturePtr& creature, ZoneType_t fromZone, ZoneType_t toZone, int32_t fromZoneId, int32_t toZoneId)
+{
+	// Creature:onChangeZone(fromZone, toZone, fromZoneId, toZoneId) or Creature.onChangeZone(self, fromZone, toZone, fromZoneId, toZoneId)
+	if (info.creatureOnChangeZone == -1) {
+		return;
+	}
+
+	if (!scriptInterface.reserveScriptEnv()) {
+		std::cout << "[Error - Events::eventCreatureOnChangeZone] Call stack overflow" << std::endl;
+		return;
+	}
+
+	ScriptEnvironment* env = scriptInterface.getScriptEnv();
+	env->setScriptId(info.creatureOnChangeZone, &scriptInterface);
+
+	lua_State* L = scriptInterface.getLuaState();
+	scriptInterface.pushFunction(info.creatureOnChangeZone);
+
+	LuaScriptInterface::pushSharedPtr(L, creature);
+	LuaScriptInterface::setCreatureMetatable(L, -1, creature);
+
+	lua_pushinteger(L, static_cast<uint8_t>(fromZone));
+	lua_pushinteger(L, static_cast<uint8_t>(toZone));
+	lua_pushinteger(L, fromZoneId);
+	lua_pushinteger(L, toZoneId);
+
+	scriptInterface.callVoidFunction(5);
+}
+
+void Events::eventCreatureOnEnterZone(const CreaturePtr& creature, ZoneType_t newZone, int32_t newZoneId)
+{
+	// Creature:onEnterZone(newZone, newZoneId) or Creature.onEnterZone(self, newZone, newZoneId)
+	if (info.creatureOnEnterZone == -1) {
+		return;
+	}
+
+	if (!scriptInterface.reserveScriptEnv()) {
+		std::cout << "[Error - Events::eventCreatureOnEnterZone] Call stack overflow" << std::endl;
+		return;
+	}
+
+	ScriptEnvironment* env = scriptInterface.getScriptEnv();
+	env->setScriptId(info.creatureOnEnterZone, &scriptInterface);
+
+	lua_State* L = scriptInterface.getLuaState();
+	scriptInterface.pushFunction(info.creatureOnEnterZone);
+
+	LuaScriptInterface::pushSharedPtr(L, creature);
+	LuaScriptInterface::setCreatureMetatable(L, -1, creature);
+
+	lua_pushinteger(L, static_cast<uint8_t>(newZone));
+	lua_pushinteger(L, newZoneId);
+
+	scriptInterface.callVoidFunction(3);
+}
+
+void Events::eventCreatureOnExitZone(const CreaturePtr& creature, ZoneType_t oldZone, int32_t oldZoneId)
+{
+	// Creature:onExitZone(oldZone, oldZoneId) or Creature.onExitZone(self, oldZone, oldZoneId)
+	if (info.creatureOnExitZone == -1) {
+		return;
+	}
+
+	if (!scriptInterface.reserveScriptEnv()) {
+		std::cout << "[Error - Events::eventCreatureOnExitZone] Call stack overflow" << std::endl;
+		return;
+	}
+
+	ScriptEnvironment* env = scriptInterface.getScriptEnv();
+	env->setScriptId(info.creatureOnExitZone, &scriptInterface);
+
+	lua_State* L = scriptInterface.getLuaState();
+	scriptInterface.pushFunction(info.creatureOnExitZone);
+
+	LuaScriptInterface::pushSharedPtr(L, creature);
+	LuaScriptInterface::setCreatureMetatable(L, -1, creature);
+
+	lua_pushinteger(L, static_cast<uint8_t>(oldZone));
+	lua_pushinteger(L, oldZoneId);
+
+	scriptInterface.callVoidFunction(3);
 }
 
 ReturnValue Events::eventCreatureOnAreaCombat(const CreaturePtr& creature, const TilePtr& tile, bool aggressive)

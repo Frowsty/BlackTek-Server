@@ -1458,6 +1458,7 @@ void Combat::doTargetCombat(const CreaturePtr& caster, const CreaturePtr& target
 
 					SpectatorVec spectators;
 					g_game.map.getSpectators(spectators, casterPlayer->getPosition(), true, true);
+					// BlackTek Instance System
 					const auto filteredSpectators = filterSpectatorsByInstance(spectators, casterPlayer->getInstanceID());
 					Game::addMagicEffect(filteredSpectators, casterPlayer->getPosition(), CONST_ME_MAGIC_GREEN);
 				}

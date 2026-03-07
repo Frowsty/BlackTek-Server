@@ -1,0 +1,288 @@
+<?xml version="1.0"?>
+<spawns>
+	<spawn centerx="1107" centery="955" centerz="7" radius="1">
+		<monster name="Wyvern" x="0" y="0" z="7" spawntime="60" direction="0" />
+	</spawn>
+	<spawn centerx="1111" centery="958" centerz="7" radius="1">
+		<monster name="Wyvern" x="0" y="1" z="7" spawntime="60" direction="0" />
+	</spawn>
+	<spawn centerx="990" centery="965" centerz="7" radius="1">
+		<monster name="Poacher" x="0" y="1" z="7" spawntime="60" direction="0" />
+	</spawn>
+	<spawn centerx="1009" centery="965" centerz="7" radius="1">
+		<monster name="Poacher" x="0" y="1" z="7" spawntime="60" direction="0" />
+	</spawn>
+	<spawn centerx="1091" centery="965" centerz="7" radius="1">
+		<monster name="Wyvern" x="0" y="0" z="7" spawntime="60" direction="0" />
+	</spawn>
+	<spawn centerx="1124" centery="965" centerz="7" radius="1">
+		<monster name="Wyvern" x="0" y="0" z="7" spawntime="60" direction="0" />
+	</spawn>
+	<spawn centerx="1031" centery="966" centerz="7" radius="1">
+		<monster name="Poacher" x="0" y="1" z="7" spawntime="60" direction="0" />
+	</spawn>
+	<spawn centerx="1058" centery="966" centerz="7" radius="1">
+		<monster name="Poacher" x="0" y="1" z="7" spawntime="60" direction="0" />
+	</spawn>
+	<spawn centerx="982" centery="967" centerz="7" radius="1">
+		<monster name="Hunter" x="0" y="-1" z="7" spawntime="60" direction="0" />
+	</spawn>
+	<spawn centerx="1001" centery="967" centerz="7" radius="1">
+		<monster name="Hunter" x="0" y="-1" z="7" spawntime="60" direction="0" />
+	</spawn>
+	<spawn centerx="1023" centery="968" centerz="7" radius="1">
+		<monster name="Hunter" x="0" y="-1" z="7" spawntime="60" direction="0" />
+	</spawn>
+	<spawn centerx="1050" centery="968" centerz="7" radius="1">
+		<monster name="Hunter" x="0" y="-1" z="7" spawntime="60" direction="0" />
+	</spawn>
+	<spawn centerx="1095" centery="968" centerz="7" radius="1">
+		<monster name="Wyvern" x="0" y="1" z="7" spawntime="60" direction="0" />
+	</spawn>
+	<spawn centerx="1128" centery="968" centerz="7" radius="1">
+		<monster name="Wyvern" x="0" y="1" z="7" spawntime="60" direction="0" />
+	</spawn>
+	<spawn centerx="1044" centery="969" centerz="7" radius="1">
+		<monster name="Poacher" x="0" y="1" z="7" spawntime="60" direction="0" />
+	</spawn>
+	<spawn centerx="1082" centery="969" centerz="7" radius="1">
+		<monster name="Poacher" x="0" y="1" z="7" spawntime="60" direction="0" />
+	</spawn>
+	<spawn centerx="1036" centery="971" centerz="7" radius="1">
+		<monster name="Hunter" x="0" y="-1" z="7" spawntime="60" direction="0" />
+	</spawn>
+	<spawn centerx="1074" centery="971" centerz="7" radius="1">
+		<monster name="Hunter" x="0" y="-1" z="7" spawntime="60" direction="0" />
+	</spawn>
+	<spawn centerx="1066" centery="972" centerz="7" radius="1">
+		<monster name="Wisp" x="0" y="-1" z="7" spawntime="60" direction="0" />
+	</spawn>
+	<spawn centerx="993" centery="975" centerz="7" radius="1">
+		<monster name="Poacher" x="1" y="-1" z="7" spawntime="60" direction="0" />
+	</spawn>
+	<spawn centerx="1012" centery="975" centerz="7" radius="1">
+		<monster name="Poacher" x="1" y="-1" z="7" spawntime="60" direction="0" />
+	</spawn>
+	<spawn centerx="1052" centery="975" centerz="7" radius="1">
+		<monster name="Wisp" x="0" y="-1" z="7" spawntime="60" direction="0" />
+	</spawn>
+	<spawn centerx="1060" centery="975" centerz="7" radius="1">
+		<monster name="Wisp" x="0" y="-1" z="7" spawntime="60" direction="0" />
+	</spawn>
+	<spawn centerx="1061" centery="976" centerz="7" radius="1">
+		<monster name="Poacher" x="1" y="-1" z="7" spawntime="60" direction="0" />
+	</spawn>
+	<spawn centerx="975" centery="977" centerz="7" radius="1">
+		<monster name="Poacher" x="0" y="1" z="7" spawntime="60" direction="0" />
+	</spawn>
+	<spawn centerx="986" centery="977" centerz="7" radius="1">
+		<monster name="Wolf" x="1" y="0" z="7" spawntime="60" direction="0" />
+	</spawn>
+	<spawn centerx="1005" centery="977" centerz="7" radius="1">
+		<monster name="Wolf" x="1" y="0" z="7" spawntime="60" direction="0" />
+	</spawn>
+	<spawn centerx="1027" centery="978" centerz="7" radius="1">
+		<monster name="Wolf" x="1" y="0" z="7" spawntime="60" direction="0" />
+	</spawn>
+	<spawn centerx="1107" centery="978" centerz="7" radius="1">
+		<monster name="Wyvern" x="0" y="0" z="7" spawntime="60" direction="0" />
+	</spawn>
+	<spawn centerx="967" centery="979" centerz="7" radius="1">
+		<monster name="Hunter" x="0" y="-1" z="7" spawntime="60" direction="0" />
+	</spawn>
+	<spawn centerx="993" centery="979" centerz="7" radius="1">
+		<monster name="Wolf" x="-1" y="1" z="7" spawntime="60" direction="0" />
+	</spawn>
+	<spawn centerx="1047" centery="979" centerz="7" radius="1">
+		<monster name="Poacher" x="1" y="-1" z="7" spawntime="60" direction="0" />
+	</spawn>
+	<spawn centerx="1055" centery="979" centerz="7" radius="1">
+		<monster name="Poacher" x="1" y="-1" z="7" spawntime="60" direction="0" />
+	</spawn>
+	<spawn centerx="1085" centery="979" centerz="7" radius="1">
+		<monster name="Poacher" x="1" y="-1" z="7" spawntime="60" direction="0" />
+	</spawn>
+	<spawn centerx="1014" centery="980" centerz="7" radius="1">
+		<monster name="Wolf" x="-1" y="1" z="7" spawntime="60" direction="0" />
+	</spawn>
+	<spawn centerx="1020" centery="981" centerz="7" radius="1">
+		<monster name="Wolf" x="-1" y="1" z="7" spawntime="60" direction="0" />
+	</spawn>
+	<spawn centerx="1040" centery="981" centerz="7" radius="1">
+		<monster name="Wolf" x="1" y="0" z="7" spawntime="60" direction="0" />
+	</spawn>
+	<spawn centerx="1078" centery="981" centerz="7" radius="1">
+		<monster name="Wolf" x="1" y="0" z="7" spawntime="60" direction="0" />
+	</spawn>
+	<spawn centerx="1102" centery="981" centerz="7" radius="1">
+		<monster name="Poacher" x="0" y="1" z="7" spawntime="60" direction="0" />
+	</spawn>
+	<spawn centerx="1111" centery="981" centerz="7" radius="1">
+		<monster name="Wyvern" x="0" y="1" z="7" spawntime="60" direction="0" />
+	</spawn>
+	<spawn centerx="1064" centery="982" centerz="7" radius="1" />
+	<spawn centerx="983" centery="983" centerz="7" radius="1">
+		<monster name="Wisp" x="0" y="-1" z="7" spawntime="60" direction="0" />
+	</spawn>
+	<spawn centerx="1015" centery="983" centerz="7" radius="1">
+		<monster name="Wolf" x="-1" y="1" z="7" spawntime="60" direction="0" />
+	</spawn>
+	<spawn centerx="1094" centery="983" centerz="7" radius="1">
+		<monster name="Hunter" x="0" y="-1" z="7" spawntime="60" direction="0" />
+	</spawn>
+	<spawn centerx="990" centery="985" centerz="7" radius="1">
+		<monster name="Wolf" x="1" y="0" z="7" spawntime="60" direction="0" />
+	</spawn>
+	<spawn centerx="1003" centery="986" centerz="7" radius="1">
+		<monster name="Wolf" x="1" y="0" z="7" spawntime="60" direction="0" />
+	</spawn>
+	<spawn centerx="961" centery="987" centerz="7" radius="1">
+		<monster name="Poacher" x="0" y="1" z="7" spawntime="60" direction="0" />
+	</spawn>
+	<spawn centerx="978" centery="987" centerz="7" radius="1">
+		<monster name="Poacher" x="1" y="-1" z="7" spawntime="60" direction="0" />
+	</spawn>
+	<spawn centerx="996" centery="987" centerz="7" radius="1">
+		<monster name="Wolf" x="1" y="0" z="7" spawntime="60" direction="0" />
+	</spawn>
+	<spawn centerx="1029" centery="987" centerz="7" radius="1">
+		<monster name="Poacher" x="1" y="-1" z="7" spawntime="60" direction="0" />
+	</spawn>
+	<spawn centerx="1083" centery="987" centerz="7" radius="1">
+		<monster name="Poacher" x="1" y="-1" z="7" spawntime="60" direction="0" />
+	</spawn>
+	<spawn centerx="953" centery="989" centerz="7" radius="1">
+		<monster name="Hunter" x="0" y="-1" z="7" spawntime="60" direction="0" />
+	</spawn>
+	<spawn centerx="971" centery="989" centerz="7" radius="1">
+		<monster name="Wolf" x="1" y="0" z="7" spawntime="60" direction="0" />
+	</spawn>
+	<spawn centerx="1009" centery="989" centerz="7" radius="1">
+		<monster name="Poacher" x="1" y="-1" z="7" spawntime="60" direction="0" />
+	</spawn>
+	<spawn centerx="1023" centery="989" centerz="7" radius="1">
+		<monster name="Wolf" x="1" y="0" z="7" spawntime="60" direction="0" />
+	</spawn>
+	<spawn centerx="1025" centery="989" centerz="7" radius="1">
+		<monster name="Wolf" x="1" y="0" z="7" spawntime="60" direction="0" />
+	</spawn>
+	<spawn centerx="1038" centery="989" centerz="7" radius="1">
+		<monster name="Wolf" x="1" y="0" z="7" spawntime="60" direction="0" />
+	</spawn>
+	<spawn centerx="1043" centery="989" centerz="7" radius="1">
+		<monster name="Wolf" x="1" y="0" z="7" spawntime="60" direction="0" />
+	</spawn>
+	<spawn centerx="1049" centery="989" centerz="7" radius="1">
+		<monster name="Wolf" x="1" y="0" z="7" spawntime="60" direction="0" />
+	</spawn>
+	<spawn centerx="1076" centery="989" centerz="7" radius="1">
+		<monster name="Wolf" x="1" y="0" z="7" spawntime="60" direction="0" />
+	</spawn>
+	<spawn centerx="1141" centery="989" centerz="7" radius="1">
+		<monster name="Hunter" x="0" y="-1" z="7" spawntime="60" direction="0" />
+	</spawn>
+	<spawn centerx="1056" centery="990" centerz="7" radius="1">
+		<monster name="Wolf" x="1" y="0" z="7" spawntime="60" direction="0" />
+	</spawn>
+	<spawn centerx="1062" centery="990" centerz="7" radius="1">
+		<monster name="Wolf" x="1" y="0" z="7" spawntime="60" direction="0" />
+	</spawn>
+	<spawn centerx="1018" centery="991" centerz="7" radius="1">
+		<monster name="Wolf" x="1" y="0" z="7" spawntime="60" direction="0" />
+	</spawn>
+	<spawn centerx="978" centery="992" centerz="7" radius="1">
+		<monster name="Wolf" x="-1" y="1" z="7" spawntime="60" direction="0" />
+	</spawn>
+	<spawn centerx="969" centery="993" centerz="7" radius="1">
+		<monster name="Wisp" x="0" y="-1" z="7" spawntime="60" direction="0" />
+	</spawn>
+	<spawn centerx="1098" centery="993" centerz="7" radius="1">
+		<monster name="Wolf" x="1" y="0" z="7" spawntime="60" direction="0" />
+	</spawn>
+	<spawn centerx="1134" centery="993" centerz="7" radius="1" />
+	<spawn centerx="1111" centery="995" centerz="7" radius="1">
+		<monster name="Poacher" x="0" y="1" z="7" spawntime="60" direction="0" />
+	</spawn>
+	<spawn centerx="964" centery="997" centerz="7" radius="1">
+		<monster name="Poacher" x="1" y="-1" z="7" spawntime="60" direction="0" />
+	</spawn>
+	<spawn centerx="985" centery="997" centerz="7" radius="1">
+		<monster name="Wolf" x="1" y="0" z="7" spawntime="60" direction="0" />
+	</spawn>
+	<spawn centerx="1103" centery="997" centerz="7" radius="1">
+		<monster name="Hunter" x="0" y="-1" z="7" spawntime="60" direction="0" />
+	</spawn>
+	<spawn centerx="1126" centery="998" centerz="7" radius="1">
+		<monster name="Hunter" x="0" y="-1" z="7" spawntime="60" direction="0" />
+	</spawn>
+	<spawn centerx="957" centery="999" centerz="7" radius="1">
+		<monster name="Wolf" x="1" y="0" z="7" spawntime="60" direction="0" />
+	</spawn>
+	<spawn centerx="1087" centery="999" centerz="7" radius="1">
+		<monster name="Poacher" x="1" y="-1" z="7" spawntime="60" direction="0" />
+	</spawn>
+	<spawn centerx="1145" centery="999" centerz="7" radius="1">
+		<monster name="Wolf" x="1" y="0" z="7" spawntime="60" direction="0" />
+	</spawn>
+	<spawn centerx="981" centery="1000" centerz="7" radius="1">
+		<monster name="Wolf" x="1" y="0" z="7" spawntime="60" direction="0" />
+	</spawn>
+	<spawn centerx="996" centery="1000" centerz="7" radius="2">
+		<npc name="James" x="-1" y="-1" z="7" spawntime="60" direction="2" />
+	</spawn>
+	<spawn centerx="1096" centery="1001" centerz="7" radius="1" />
+	<spawn centerx="1119" centery="1002" centerz="7" radius="1" />
+	<spawn centerx="974" centery="1003" centerz="7" radius="1">
+		<monster name="Wisp" x="0" y="-1" z="7" spawntime="60" direction="0" />
+	</spawn>
+	<spawn centerx="1146" centery="1004" centerz="7" radius="1">
+		<monster name="Hunter" x="0" y="-1" z="7" spawntime="60" direction="0" />
+	</spawn>
+	<spawn centerx="1115" centery="1005" centerz="7" radius="1" />
+	<spawn centerx="1135" centery="1005" centerz="7" radius="1">
+		<monster name="Hunter" x="0" y="-1" z="7" spawntime="60" direction="0" />
+	</spawn>
+	<spawn centerx="969" centery="1007" centerz="7" radius="1">
+		<monster name="Poacher" x="1" y="-1" z="7" spawntime="60" direction="0" />
+	</spawn>
+	<spawn centerx="1107" centery="1007" centerz="7" radius="1">
+		<monster name="Wolf" x="1" y="0" z="7" spawntime="60" direction="0" />
+	</spawn>
+	<spawn centerx="1139" centery="1008" centerz="7" radius="1" />
+	<spawn centerx="962" centery="1009" centerz="7" radius="1">
+		<monster name="Wolf" x="1" y="0" z="7" spawntime="60" direction="0" />
+	</spawn>
+	<spawn centerx="1015" centery="1009" centerz="7" radius="1">
+		<monster name="Deer" x="1" y="-1" z="7" spawntime="60" direction="0" />
+		<monster name="Rabbit" x="0" y="1" z="7" spawntime="60" direction="0" />
+	</spawn>
+	<spawn centerx="1126" centery="1009" centerz="7" radius="1">
+		<monster name="Hunter" x="0" y="-1" z="7" spawntime="60" direction="0" />
+	</spawn>
+	<spawn centerx="1109" centery="1011" centerz="7" radius="1">
+		<monster name="Hunter" x="0" y="-1" z="7" spawntime="60" direction="0" />
+	</spawn>
+	<spawn centerx="1116" centery="1013" centerz="7" radius="1">
+		<monster name="Hunter" x="0" y="-1" z="7" spawntime="60" direction="0" />
+	</spawn>
+	<spawn centerx="1150" centery="1014" centerz="7" radius="1">
+		<monster name="Wolf" x="1" y="0" z="7" spawntime="60" direction="0" />
+	</spawn>
+	<spawn centerx="1102" centery="1015" centerz="7" radius="1" />
+	<spawn centerx="1134" centery="1015" centerz="7" radius="1">
+		<monster name="Hunter" x="0" y="-1" z="7" spawntime="60" direction="0" />
+	</spawn>
+	<spawn centerx="1127" centery="1019" centerz="7" radius="1" />
+	<spawn centerx="1033" centery="1021" centerz="7" radius="1">
+		<monster name="Monk" x="0" y="0" z="7" spawntime="10" direction="2" />
+	</spawn>
+	<spawn centerx="1113" centery="1021" centerz="7" radius="1">
+		<monster name="Wolf" x="1" y="0" z="7" spawntime="60" direction="0" />
+	</spawn>
+	<spawn centerx="1120" centery="1023" centerz="7" radius="1">
+		<monster name="Wolf" x="1" y="0" z="7" spawntime="60" direction="0" />
+	</spawn>
+	<spawn centerx="1138" centery="1025" centerz="7" radius="1">
+		<monster name="Wolf" x="1" y="0" z="7" spawntime="60" direction="0" />
+	</spawn>
+</spawns>

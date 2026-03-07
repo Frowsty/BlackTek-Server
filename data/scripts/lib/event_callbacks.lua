@@ -25,12 +25,14 @@ end})
 -- Creature
 ec.onChangeOutfit = {}
 ec.onChangeMount = {}
+ec.onChangeZone = {}
+ec.onEnterZone = {}
+ec.onExitZone = {}
 ec.onAreaCombat = {returnValue=true}
 ec.onTargetCombat = {returnValue=true}
 ec.onHear = {}
 ec.onDoAttack = {}
 ec.onDefendAttack = {}
--- ec.onChangeZone = {} // todo: missing event from main.
 -- Party
 ec.onJoin = {}
 ec.onLeave = {}

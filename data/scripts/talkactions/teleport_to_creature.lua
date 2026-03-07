@@ -3,6 +3,13 @@ local function onSay(player, words, param)
 		return true
 	end
 
+	local x, y, z = param:match("^%s*(-?%d+)%s*,%s*(-?%d+)%s*,%s*(-?%d+)%s*$")
+	if x and y and z then
+		local position = Position(tonumber(x), tonumber(y), tonumber(z))
+		player:teleportTo(position)
+		return false
+	end
+
 	local target = Creature(param)
 	if target then
 		player:teleportTo(target:getPosition())

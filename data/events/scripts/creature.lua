@@ -20,6 +20,27 @@ function Creature:onAreaCombat(tile, isAggressive)
 	return RETURNVALUE_NOERROR
 end
 
+function Creature:onChangeZone(fromZone, toZone, fromZoneId, toZoneId)
+	local onChangeZone = EventCallback.onChangeZone
+	if onChangeZone then
+		onChangeZone(self, fromZone, toZone, fromZoneId, toZoneId)
+	end
+end
+
+function Creature:onEnterZone(newZone, newZoneId)
+	local onEnterZone = EventCallback.onEnterZone
+	if onEnterZone then
+		onEnterZone(self, newZone, newZoneId)
+	end
+end
+
+function Creature:onExitZone(oldZone, oldZoneId)
+	local onExitZone = EventCallback.onExitZone
+	if onExitZone then
+		onExitZone(self, oldZone, oldZoneId)
+	end
+end
+
 function Creature:onTargetCombat(target)
 	local onTargetCombat = EventCallback.onTargetCombat
 	if onTargetCombat then

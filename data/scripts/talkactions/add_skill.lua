@@ -48,7 +48,7 @@ local function onSay(player, words, param)
 		count = tonumber(split[3])
 	end
 
-	local skillId = getSkillId(split[2])
+	local skillId = getSkillId(split[2]:lower())
 	if not skillId then
 		player:sendCancelMessage("Unknown skill.")
 		return false

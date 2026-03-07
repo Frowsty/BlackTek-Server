@@ -10,6 +10,7 @@
 #include "scheduler.h"
 #include "events.h"
 #include "party.h"
+#include "zones.h"
 
 double Creature::speedA = 857.36;
 double Creature::speedB = 261.29;
@@ -19,6 +20,55 @@ extern Game g_game;
 extern ConfigManager g_config;
 extern CreatureEvents* g_creatureEvents;
 extern Events* g_events;
+
+namespace
+{
+	std::vector<int32_t> getCustomZoneIdsAt(const Position& position)
+	{
+		auto zoneIds = Zones::getZonesByPosition(position);
+		if (zoneIds.empty()) {
+			return {};
+		}
+
+		std::sort(zoneIds.begin(), zoneIds.end());
+		zoneIds.erase(std::unique(zoneIds.begin(), zoneIds.end()), zoneIds.end());
+		std::vector<int32_t> result;
+		result.reserve(zoneIds.size());
+		for (const int zoneId : zoneIds) {
+			result.push_back(zoneId);
+		}
+		return result;
+	}
+
+	int32_t getPrimaryCustomZoneId(const std::vector<int32_t>& zoneIds)
+	{
+		if (zoneIds.empty()) {
+			return 0;
+		}
+
+		return zoneIds.front();
+	}
+
+	int32_t getFirstEnteredZoneId(const std::vector<int32_t>& oldZoneIds, const std::vector<int32_t>& newZoneIds)
+	{
+		for (const auto zoneId : newZoneIds) {
+			if (!std::binary_search(oldZoneIds.begin(), oldZoneIds.end(), zoneId)) {
+				return zoneId;
+			}
+		}
+		return 0;
+	}
+
+	int32_t getFirstExitedZoneId(const std::vector<int32_t>& oldZoneIds, const std::vector<int32_t>& newZoneIds)
+	{
+		for (const auto zoneId : oldZoneIds) {
+			if (!std::binary_search(newZoneIds.begin(), newZoneIds.end(), zoneId)) {
+				return zoneId;
+			}
+		}
+		return 0;
+	}
+}
 
 Creature::Creature()
 {
@@ -529,8 +579,21 @@ void Creature::onCreatureMove(const CreaturePtr& creature,
 			}
 		}
 
-		if (newTile->getZone() != oldTile->getZone()) {
-			onChangeZone(getZone());
+		const ZoneType_t fromZone = oldTile->getZone();
+		const ZoneType_t toZone = newTile->getZone();
+		const auto fromZoneIds = getCustomZoneIdsAt(oldPos);
+		const auto toZoneIds = getCustomZoneIdsAt(newPos);
+		const int32_t fromZoneId = getPrimaryCustomZoneId(fromZoneIds);
+		const int32_t toZoneId = getPrimaryCustomZoneId(toZoneIds);
+		const bool zoneTypeChanged = toZone != fromZone;
+		const bool zoneIdsChanged = fromZoneIds != toZoneIds;
+		if (zoneTypeChanged || zoneIdsChanged) {
+			const int32_t exitedZoneId = getFirstExitedZoneId(fromZoneIds, toZoneIds);
+			const int32_t enteredZoneId = getFirstEnteredZoneId(fromZoneIds, toZoneIds);
+			onChangeZone(toZone);
+			g_events->eventCreatureOnExitZone(getCreature(), fromZone, exitedZoneId != 0 ? exitedZoneId : fromZoneId);
+			g_events->eventCreatureOnEnterZone(getCreature(), toZone, enteredZoneId != 0 ? enteredZoneId : toZoneId);
+			g_events->eventCreatureOnChangeZone(getCreature(), fromZone, toZone, fromZoneId, toZoneId);
 		}
 
 		//update map cache
